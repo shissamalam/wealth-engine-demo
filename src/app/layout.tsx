@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Wealth Engine 2026 — Demo',
+  title: 'Wealth Engine — Demo',
   description: 'Financial planning and wealth projection tool. Demo mode with fictional data.',
 };
 

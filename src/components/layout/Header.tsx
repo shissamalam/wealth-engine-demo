@@ -207,7 +207,7 @@ export function Header({ onLogout }: HeaderProps) {
 
         {/* Brand */}
         <div>
-          <h1 className="text-xl font-bold text-white">Wealth Engine 2026</h1>
+          <h1 className="text-xl font-bold text-white">Wealth Engine</h1>
           <p className="text-sm text-forest-400">Wealth Architecture & Strategy Engine</p>
         </div>
 

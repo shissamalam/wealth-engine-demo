@@ -47,7 +47,7 @@ export function PasswordGate({ onAuthenticated }: PasswordGateProps) {
             <Shield className="w-8 h-8 text-forest-500" />
           </div>
           <div>
-            <CardTitle className="text-2xl">Wealth Engine 2026</CardTitle>
+            <CardTitle className="text-2xl">Wealth Engine</CardTitle>
             <CardTitle className="text-xl text-forest-400">Wealth Architecture</CardTitle>
           </div>
           <CardDescription>
