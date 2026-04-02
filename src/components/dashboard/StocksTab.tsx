@@ -132,13 +132,13 @@ function StockCard({ stock, onProject, isProjecting }: StockCardProps) {
               >
                 <XAxis
                   dataKey="label"
-                  tick={{ fontSize: 9, fill: '#64748b' }}
+                  tick={{ fontSize: 9, fill: '#8A8784' }}
                   interval="preserveStartEnd"
                   tickLine={false}
                   axisLine={false}
                 />
                 <YAxis
-                  tick={{ fontSize: 9, fill: '#64748b' }}
+                  tick={{ fontSize: 9, fill: '#8A8784' }}
                   tickFormatter={(v) => `$${Number(v).toFixed(0)}`}
                   domain={['auto', 'auto']}
                   tickLine={false}
@@ -147,12 +147,12 @@ function StockCard({ stock, onProject, isProjecting }: StockCardProps) {
                 />
                 <Tooltip
                   contentStyle={{
-                    background: '#0f172a',
-                    border: '1px solid #1e293b',
+                    background: '#0F0F0F',
+                    border: '1px solid #1A1A1A',
                     borderRadius: 8,
                     fontSize: 11,
                   }}
-                  labelStyle={{ color: '#94a3b8', marginBottom: 2 }}
+                  labelStyle={{ color: '#8A8784', marginBottom: 2 }}
                   formatter={(val: unknown, key: string) => {
                     const labels: Record<string, string> = {
                       actual: 'Actual',
@@ -168,11 +168,11 @@ function StockCard({ stock, onProject, isProjecting }: StockCardProps) {
                 {hasProjection && todayLabel && (
                   <ReferenceLine
                     x={todayLabel}
-                    stroke="#334155"
+                    stroke="#242424"
                     strokeDasharray="4 2"
                     label={{
                       value: 'Now',
-                      fill: '#475569',
+                      fill: '#4A4846',
                       fontSize: 9,
                       position: 'insideTopRight',
                     }}
@@ -200,7 +200,7 @@ function StockCard({ stock, onProject, isProjecting }: StockCardProps) {
                     dataKey="bear"
                     type="monotone"
                     stroke="transparent"
-                    fill="#0f172a"
+                    fill="#0F0F0F"
                     fillOpacity={1}
                     dot={false}
                     legendType="none"
@@ -226,11 +226,11 @@ function StockCard({ stock, onProject, isProjecting }: StockCardProps) {
                   <Line
                     dataKey="projected"
                     type="monotone"
-                    stroke="#94a3b8"
+                    stroke="#8A8784"
                     strokeWidth={2}
                     strokeDasharray="6 3"
                     dot={false}
-                    activeDot={{ r: 3, fill: '#94a3b8' }}
+                    activeDot={{ r: 3, fill: '#8A8784' }}
                     name="projected"
                     connectNulls={false}
                   />
@@ -281,7 +281,7 @@ function StockCard({ stock, onProject, isProjecting }: StockCardProps) {
                   <span className="flex items-center gap-1">
                     <span
                       className="inline-block w-4 h-0.5 bg-slate-400 rounded"
-                      style={{ borderTop: '2px dashed #94a3b8', display: 'inline-block', height: 0 }}
+                      style={{ borderTop: '2px dashed #8A8784', display: 'inline-block', height: 0 }}
                     />
                     Projected
                   </span>

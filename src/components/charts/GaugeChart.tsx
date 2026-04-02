@@ -51,7 +51,7 @@ export function GaugeChart({
               stroke="none"
             >
               <Cell fill={color} />
-              <Cell fill="#334155" />
+              <Cell fill="#242424" />
             </Pie>
           </PieChart>
         </ResponsiveContainer>

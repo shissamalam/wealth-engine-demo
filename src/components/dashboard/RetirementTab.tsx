@@ -392,9 +392,9 @@ export function RetirementTab() {
   const allocationData = [
     { name: 'Vanguard IRA — Mine', value: accounts.vanguardIRAMine.balance, color: '#166534' },
     { name: 'Vanguard IRA — Son', value: accounts.vanguardIRASon.balance, color: '#22c55e' },
-    { name: 'Vanguard IRA — Daughter', value: accounts.vanguardIRADaughter.balance, color: '#14b8a6' },
-    { name: "Wife's 403(b)", value: accounts.employer403b.balance, color: '#3b82f6' },
-    { name: 'Wealthfront', value: accounts.wealthfront.balance, color: '#8b5cf6' },
+    { name: 'Vanguard IRA — Daughter', value: accounts.vanguardIRADaughter.balance, color: '#C8843A' },
+    { name: "Wife's 403(b)", value: accounts.employer403b.balance, color: '#C8843A' },
+    { name: 'Wealthfront', value: accounts.wealthfront.balance, color: '#D9A05A' },
   ];
 
   // Shared props forwarded to every AccountCard
@@ -561,7 +561,7 @@ export function RetirementTab() {
             accountKey="employer403b"
             account={accounts.employer403b}
             icon={Building2}
-            iconColor="text-blue-500"
+            iconColor="text-amber-500"
             {...cardProps}
           />
           <AccountCard

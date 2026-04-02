@@ -69,7 +69,7 @@ export function DashboardTab() {
         <Card>
           <CardHeader className="pb-2">
             <CardTitle className="text-lg flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-blue-500" />
+              <GraduationCap className="w-5 h-5 text-amber-500" />
               College Funding
             </CardTitle>
             <CardDescription>529 Plan Progress</CardDescription>
@@ -79,7 +79,7 @@ export function DashboardTab() {
               value={education.total.progress}
               label={formatCurrency(education.total.current)}
               sublabel={`Target: ${formatCurrency(education.total.target)}`}
-              color="#3b82f6"
+              color="#C8843A"
             />
           </CardContent>
         </Card>

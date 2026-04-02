@@ -359,11 +359,11 @@ export function AssetsTab() {
             </div>
           </CardContent>
         </Card>
-        <Card className="border-blue-600/30">
+        <Card className="border-amber-600/30">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-600/20 rounded-lg">
-                <Wallet className="w-5 h-5 text-blue-500" />
+              <div className="p-2 bg-amber-600/20 rounded-lg">
+                <Wallet className="w-5 h-5 text-amber-500" />
               </div>
               <div>
                 <p className="text-sm text-slate-400">Net Worth</p>
@@ -440,7 +440,7 @@ export function AssetsTab() {
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="flex items-center gap-2">
-              <Home className="w-5 h-5 text-blue-500" />
+              <Home className="w-5 h-5 text-amber-500" />
               Real Estate
             </CardTitle>
             {!showAddProperty && (
@@ -475,7 +475,7 @@ export function AssetsTab() {
                       <p className="text-sm text-slate-400">{property.type}</p>
                     </div>
                     {isMortgaged ? (
-                      <span className="px-2 py-1 bg-blue-600/20 text-blue-400 text-xs rounded">
+                      <span className="px-2 py-1 bg-amber-600/20 text-amber-400 text-xs rounded">
                         Primary
                       </span>
                     ) : (

@@ -57,7 +57,7 @@ function BeneficiaryCard({
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg flex items-center gap-2">
-            <User className="w-5 h-5 text-blue-500" />
+            <User className="w-5 h-5 text-amber-500" />
             {label}
           </CardTitle>
           {!isEditing ? (
@@ -88,7 +88,7 @@ function BeneficiaryCard({
             value={progress.progress}
             label={formatCurrency(progress.current)}
             sublabel={`of ${formatCurrency(progress.target)}`}
-            color="#3b82f6"
+            color="#C8843A"
             size="sm"
           />
         </div>
@@ -154,7 +154,7 @@ function BeneficiaryCard({
           {progress.yearsRemaining > 0 && (
             <div className="flex items-center justify-between p-3 bg-slate-800/50 rounded-lg">
               <span className="text-sm text-slate-400">Monthly Contribution Needed</span>
-              <span className="font-medium text-blue-400">
+              <span className="font-medium text-amber-400">
                 {formatCurrency(
                   Math.max(progress.target - progress.current, 0) /
                     (progress.yearsRemaining * 12)
@@ -169,7 +169,7 @@ function BeneficiaryCard({
             <span className="text-slate-400">Progress</span>
             <span className="text-slate-300">{progress.progress.toFixed(1)}%</span>
           </div>
-          <Progress value={progress.progress} indicatorClassName="bg-blue-500" />
+          <Progress value={progress.progress} indicatorClassName="bg-amber-500" />
         </div>
       </CardContent>
     </Card>
@@ -204,7 +204,7 @@ function ExternalGiftCard({
         <div>
           <span className="font-medium text-slate-200">{gift.description}</span>
           {gift.beneficiary && (
-            <span className="ml-2 text-xs px-1.5 py-0.5 rounded bg-blue-900/40 text-blue-400">
+            <span className="ml-2 text-xs px-1.5 py-0.5 rounded bg-amber-900/40 text-amber-400">
               {gift.beneficiary}
             </span>
           )}
@@ -236,7 +236,7 @@ function ExternalGiftCard({
               type="number"
               value={editGift.balance ?? 0}
               onChange={(e) => onChange({ ...editGift, balance: parseFloat(e.target.value) || 0 })}
-              className="w-full h-9 rounded-md border border-slate-600 bg-slate-800/80 text-white text-sm px-3 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full h-9 rounded-md border border-slate-600 bg-slate-800/80 text-white text-sm px-3 focus:outline-none focus:ring-1 focus:ring-amber-500"
               autoFocus
             />
           </div>
@@ -246,13 +246,13 @@ function ExternalGiftCard({
               type="text"
               value={editGift.notes ?? ''}
               onChange={(e) => onChange({ ...editGift, notes: e.target.value })}
-              className="w-full h-9 rounded-md border border-slate-600 bg-slate-800/80 text-white text-sm px-3 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="w-full h-9 rounded-md border border-slate-600 bg-slate-800/80 text-white text-sm px-3 focus:outline-none focus:ring-1 focus:ring-amber-500"
             />
           </div>
         </div>
       ) : (
         <>
-          <div className="text-2xl font-bold text-blue-400">
+          <div className="text-2xl font-bold text-amber-400">
             {new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(gift.balance)}
           </div>
           {gift.notes && <p className="text-xs text-slate-500 mt-1">{gift.notes}</p>}
@@ -355,10 +355,10 @@ export function EducationTab() {
   return (
     <div className="space-y-6">
       {/* Summary Card */}
-      <Card className="border-blue-600/30">
+      <Card className="border-amber-600/30">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <GraduationCap className="w-6 h-6 text-blue-500" />
+            <GraduationCap className="w-6 h-6 text-amber-500" />
             529 Education Plan
           </CardTitle>
           <CardDescription>{plan529.provider}</CardDescription>
@@ -379,7 +379,7 @@ export function EducationTab() {
             </div>
             <div>
               <p className="text-sm text-slate-400">Overall Progress</p>
-              <p className="text-3xl font-bold text-blue-400">
+              <p className="text-3xl font-bold text-amber-400">
                 {education.total.progress.toFixed(1)}%
               </p>
             </div>
@@ -388,7 +388,7 @@ export function EducationTab() {
             <Progress
               value={education.total.progress}
               className="h-3"
-              indicatorClassName="bg-blue-500"
+              indicatorClassName="bg-amber-500"
             />
           </div>
         </CardContent>
@@ -414,10 +414,10 @@ export function EducationTab() {
 
       {/* External Education Gifts */}
       {externalGifts.length > 0 && (
-        <Card className="border-blue-700/30">
+        <Card className="border-amber-700/30">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Gift className="w-5 h-5 text-blue-400" />
+              <Gift className="w-5 h-5 text-amber-400" />
               External Education Accounts
             </CardTitle>
           </CardHeader>
@@ -430,9 +430,9 @@ export function EducationTab() {
                 <ExternalGiftCard key={gift.id} gift={gift} {...giftCardProps} />
               ))}
             </div>
-            <div className="mt-4 p-3 bg-blue-900/20 border border-blue-700/30 rounded-lg flex justify-between">
+            <div className="mt-4 p-3 bg-amber-900/20 border border-amber-700/30 rounded-lg flex justify-between">
               <span className="text-sm text-slate-400">Total External Education</span>
-              <span className="text-lg font-bold text-blue-400">
+              <span className="text-lg font-bold text-amber-400">
                 {formatCurrency(externalGifts.reduce((s, g) => s + g.balance, 0))}
               </span>
             </div>

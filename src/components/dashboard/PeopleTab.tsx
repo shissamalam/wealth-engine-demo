@@ -59,7 +59,7 @@ function FamilyMemberCard({
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
           <CardTitle className="text-base flex items-center gap-2">
-            <Users className="w-4 h-4 text-blue-400" />
+            <Users className="w-4 h-4 text-amber-400" />
             {member.role.charAt(0).toUpperCase() + member.role.slice(1)}
           </CardTitle>
           {!isEditing ? (
@@ -503,13 +503,13 @@ function GiftRow({
         <div className="flex items-center gap-2">
           <span className="font-medium text-slate-200 truncate">{gift.description}</span>
           {gift.beneficiary && (
-            <span className="text-xs px-1.5 py-0.5 rounded bg-blue-900/40 text-blue-400 flex-shrink-0">
+            <span className="text-xs px-1.5 py-0.5 rounded bg-amber-900/40 text-amber-400 flex-shrink-0">
               {gift.beneficiary}
             </span>
           )}
         </div>
         <div className="flex items-center gap-3 mt-0.5">
-          <span className="text-lg font-semibold text-blue-400">
+          <span className="text-lg font-semibold text-amber-400">
             {formatCurrency(gift.balance)}
           </span>
         </div>
@@ -770,7 +770,7 @@ export function PeopleTab() {
     <div className="space-y-6">
       {/* Household Summary */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card className="border-blue-600/30">
+        <Card className="border-amber-600/30">
           <CardContent className="pt-6">
             <p className="text-sm text-slate-400">Household Income</p>
             <p className="text-2xl font-bold text-white">{formatCurrency(totalHouseholdIncome)}</p>
@@ -846,7 +846,7 @@ export function PeopleTab() {
         <CardContent>
           <p className="text-xs text-slate-500 mb-4">
             Monthly benefit at full retirement age (67 for those born after 1960). Check your{' '}
-            <span className="text-blue-400">SSA.gov</span> account for estimates.
+            <span className="text-amber-400">SSA.gov</span> account for estimates.
           </p>
           {editingSS ? (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -961,7 +961,7 @@ export function PeopleTab() {
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-blue-400" />
+              <GraduationCap className="w-5 h-5 text-amber-400" />
               External Education Accounts
             </CardTitle>
             <Button
@@ -993,7 +993,7 @@ export function PeopleTab() {
           {externalGifts.length > 0 && (
             <div className="mt-3 p-3 bg-slate-800/50 rounded-lg flex justify-between">
               <span className="text-sm text-slate-400">Total External Education</span>
-              <span className="text-lg font-bold text-blue-400">
+              <span className="text-lg font-bold text-amber-400">
                 {formatCurrency(externalGifts.reduce((s, g) => s + g.balance, 0))}
               </span>
             </div>

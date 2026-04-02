@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Henderson Family Wealth Architecture — Demo',
-  description: 'Wealth management dashboard demo with fictional data',
+  title: 'Wealth Engine 2026 — Demo',
+  description: 'Financial planning and wealth projection tool. Demo mode with fictional data.',
 };
 
 export default function RootLayout({
