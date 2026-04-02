@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "lastUpdated": "2026-04-01T12:00:00.000Z",
+    "version": "1.0.0"
+  },
+  "retirement": {
+    "targetAnnualSpend": 96000,
+    "accounts": {
+      "vanguardIRAMine": {
+        "label": "Vanguard IRA — Mine",
+        "balance": 220000,
+        "holdings": [
+          {
+            "ticker": "VBTLX",
+            "name": "Total Bond Market",
+            "shares": 0,
+            "value": 33000
+          },
+          {
+            "ticker": "VDADX",
+            "name": "Dividend Appreciation Index",
+            "shares": 0,
+            "value": 44000
+          },
+          {
+            "ticker": "VTIAX",
+            "name": "Total International Stock Index",
+            "shares": 0,
+            "value": 55000
+          },
+          {
+            "ticker": "VTSAX",
+            "name": "Total Stock Market Index",
+            "shares": 0,
+            "value": 88000
+          }
+        ]
+      },
+      "vanguardIRASon": {
+        "label": "Vanguard IRA — Son",
+        "balance": 8200,
+        "holdings": [
+          {
+            "ticker": "VTSAX",
+            "name": "Total Stock Market Index",
+            "shares": 0,
+            "value": 4920
+          },
+          {
+            "ticker": "VWO",
+            "name": "FTSE Emerging Markets",
+            "shares": 0,
+            "value": 820
+          },
+          {
+            "ticker": "VXUS",
+            "name": "Total International Stock Index",
+            "shares": 0,
+            "value": 2460
+          }
+        ]
+      },
+      "vanguardIRADaughter": {
+        "label": "Vanguard IRA — Daughter",
+        "balance": 6800,
+        "holdings": [
+          {
+            "ticker": "VTSAX",
+            "name": "Total Stock Market Index",
+            "shares": 0,
+            "value": 4080
+          },
+          {
+            "ticker": "VWO",
+            "name": "FTSE Emerging Markets",
+            "shares": 0,
+            "value": 680
+          },
+          {
+            "ticker": "VXUS",
+            "name": "Total International Stock Index",
+            "shares": 0,
+            "value": 2040
+          }
+        ]
+      },
+      "employer403b": {
+        "label": "Wife's 403(b) Plan",
+        "balance": 185000,
+        "employer": "Regional Medical Center",
+        "vestingPercent": 100
+      },
+      "wealthfront": {
+        "label": "Wealthfront Investment",
+        "balance": 190000,
+        "riskScore": 7
+      }
+    }
+  },
+  "education": {
+    "plan529": {
+      "provider": "Texas 529 Plan",
+      "beneficiaries": {
+        "son": {
+          "name": "Ethan",
+          "balance": 42000,
+          "targetYear": 2037,
+          "targetAmount": 180000
+        },
+        "daughter": {
+          "name": "Lily",
+          "balance": 18000,
+          "targetYear": 2040,
+          "targetAmount": 180000
+        }
+      }
+    },
+    "externalGifts": [
+      {
+        "id": "gift-demo-001",
+        "description": "Grandparent Education Gift",
+        "balance": 35000,
+        "beneficiary": "Kids",
+        "notes": ""
+      }
+    ]
+  },
+  "assets": {
+    "liquidCash": {
+      "checking": {
+        "label": "Primary Checking",
+        "balance": 22000,
+        "institution": "Demo Credit Union"
+      },
+      "savings": {
+        "label": "High-Yield Savings",
+        "balance": 100000,
+        "institution": "Demo Savings Bank",
+        "apy": 4.5
+      },
+      "emergencyFund": {
+        "label": "Emergency Fund",
+        "balance": 58000,
+        "targetMonths": 6
+      }
+    },
+    "realEstate": [
+      {
+        "id": "primary-residence",
+        "address": "742 Evergreen Terrace",
+        "type": "Primary Residence",
+        "purchasePrice": 425000,
+        "estimatedValue": 580000,
+        "purchaseDate": "2020-06-15",
+        "notes": ""
+      },
+      {
+        "id": "land-demo",
+        "address": "Lot 12 Hillcrest Rd",
+        "type": "Undeveloped Land",
+        "purchasePrice": 45000,
+        "estimatedValue": 72000,
+        "purchaseDate": "2021-09-01",
+        "notes": ""
+      }
+    ]
+  },
+  "liabilities": {
+    "mortgage": {
+      "property": "742 Evergreen Terrace",
+      "lender": "Demo Mortgage Corp",
+      "originalAmount": 382000,
+      "currentBalance": 310000,
+      "interestRate": 4.875,
+      "monthlyPayment": 2800,
+      "startDate": "2020-06-15",
+      "termYears": 30,
+      "yearsRemaining": 24
+    }
+  },
+  "strategyFeed": {
+    "insights": []
+  },
+  "family": {
+    "husband": {
+      "name": "James",
+      "birthYear": 1986,
+      "employed": true,
+      "grossSalary": 185000,
+      "role": "husband"
+    },
+    "wife": {
+      "name": "Sarah",
+      "birthYear": 1987,
+      "employed": true,
+      "grossSalary": 42000,
+      "role": "wife"
+    },
+    "son": {
+      "name": "Ethan",
+      "birthYear": 2019,
+      "role": "son"
+    },
+    "daughter": {
+      "name": "Lily",
+      "birthYear": 2022,
+      "role": "daughter"
+    }
+  },
+  "expectedInheritances": [
+    {
+      "id": "inheritance-demo-001",
+      "description": "Robert Henderson Estate",
+      "estimatedAmount": 250000,
+      "minYears": 8,
+      "maxYears": 15,
+      "beneficiary": "husband",
+      "notes": ""
+    },
+    {
+      "id": "inheritance-demo-002",
+      "description": "Margaret & Paul Carter Trust",
+      "estimatedAmount": 175000,
+      "minYears": 10,
+      "maxYears": 20,
+      "beneficiary": "wife",
+      "notes": ""
+    }
+  ],
+  "socialSecurity": {
+    "husbandMonthly": 3200,
+    "wifeMonthly": 1800
+  }
+}
